@@ -9,13 +9,11 @@
  */
 int main(void)
 {
-	int alphabet = 'A';
+	int alphabet = 'a';
 
-	while (alphabet <= 'Z')
+	while (alphabet <= 'z')
 	{
-		int lower_alpha = tolower(alphabet);
-
-		putchar(lower_alpha));
+		putchar(alphabet);
 		alphabet++;
 	}
 	putchar('\n');
