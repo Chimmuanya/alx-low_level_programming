@@ -19,3 +19,25 @@ a program that prints the alphabet in lowercase, followed by a new line.
 You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
 All your code should be in the main function
 You can only use putchar twice in your code.
+
+3-print_alphabets.c:
+Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+
+You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+All your code should be in the main function
+You can only use putchar three times in your code
+
+4-print_alphabt.c:
+
+Write a program that prints the alphabet in lowercase, followed by a new line.
+
+Print all the letters except q and e
+You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+All your code should be in the main function
+You can only use putchar twice in your code
+
+5-print_numbers.c:
+
+Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+
+All your code should be in the main function
