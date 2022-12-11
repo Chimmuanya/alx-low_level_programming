@@ -27,9 +27,13 @@ int main(void)
 	 * loop through and print numbers to stdout with putchar; end with
 	 * newline
 	 */
-	for (int i = zero; i < ten; i++)
+	int i;
+
+	for (i = zero; i < ten; i++)
 	{
-		for (int j = i + 1; j < ten; j++)
+		int j;
+
+		for (j = i + 1; j < ten; j++)
 		{
 			putchar(i);
 			putchar(j);
