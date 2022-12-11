@@ -14,13 +14,9 @@ int main(void)
 
     /*define the necessary variables*/
 	int zero = 48;
-
 	int ten = 58;
-
 	int comma = 44;
-
 	int space = 32;
-
 	int newline = 10;
 
 	/*
@@ -33,21 +29,23 @@ int main(void)
 	{
 		int j;
 
-		for (j = i + 1; j < ten; j++)
+		for (j = i + 1; j < ten - 1; j++)
 		{
-			putchar(i);
-			putchar(j);
-			if (i == ten - 2 && j == ten - 1)
-			{
-				break;
-			}
-			putchar(comma);
+			int k;
 
-			putchar(space);
+			for (k = j + 1; k < ten; k++)
+			{
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				if (i == ten - 3 && (j == ten - 2 &&
+						     k == ten - 1))
+					break;
+				putchar(comma);
+				putchar(space);
+			}
 		}
 	}
-
 	putchar(newline);
-
 	return (0);
 }
