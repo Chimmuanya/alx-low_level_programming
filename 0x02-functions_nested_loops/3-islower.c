@@ -7,7 +7,7 @@
  * @c: char to be checked.
  * Return: int 1 if success or 0 otherwise
  */
-int _islower(int c);
+int _islower(int c)
 {
 	int first = 97;
 	int last = 97 + 25;
