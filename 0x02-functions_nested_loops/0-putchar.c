@@ -12,7 +12,7 @@ int main(void)
 
 	int len = sizeof(put_char) / sizeof(put_char[0]);
 
-	int i = 0
+	int i = 0;
 
 	while (i < len)
 	{
