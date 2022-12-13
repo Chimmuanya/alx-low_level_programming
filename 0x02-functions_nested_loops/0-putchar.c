@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	int put_char[7] = {95, 112, 117, 116, 99, 97, 114};
+	int put_char[] = {95, 112, 117, 116, 99, 104, 97, 114};
 
-	int len = sizeof(put_char);
+	int len = sizeof(put_char) / sizeof(put_char[0]);
 
 	int i = 0
 
