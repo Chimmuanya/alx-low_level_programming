@@ -2,7 +2,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * print_alphabet - function to print alphabet using _putchar
+ * print_alphabet_x10 - function to print alphabet using _putchar
  * prints lowercase alphabets to stdout in 10 lines followed by a newline.
  * Return: void
  */
