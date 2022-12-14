@@ -16,7 +16,7 @@ int _isalpha(int c)
 
 	c = (int) c;
 
-	if (c >= last && c <= first)
+	if (c >= first && c <= last)
 	{
 		return (1);
 	}
