@@ -6,3 +6,5 @@ These projects will make use of header file main.h andc function _putchar.
 2. 2-print_alphabet_x10.c: prints lowercase alphabets 10 times.
 3. int _islower(int c): checks if int char is lowercase.
 4. int _isalpha(int c): checks if int char is an alphabet
+5-
+6. 6-abs.c: calculates the absolute value of an integer
