@@ -22,6 +22,10 @@ int print_last_digit(int n)
 	{
 		_putchar(last_digit + '0');
 	}
+	else
+	{
+		_putchar(0 + '0');
+	}
 
 	return (last_digit);
 
