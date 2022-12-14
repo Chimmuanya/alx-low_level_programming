@@ -43,12 +43,13 @@ void print_times_table(int n)
 
 		while (j <= n)
 		{
-			print_int((i * j));
+			print_int(i * j);
 
 			if (j < n)
 			{
 				_putchar(COMMA);
-				if ((i * j < 10) && (i * (j + 1) < 10))
+				if ((i * j) < 10) && (i * (j + 1) < 10) ||
+							 i * (j + 1) < 100))
 				{
 					_putchar(SPACE);
 				}
