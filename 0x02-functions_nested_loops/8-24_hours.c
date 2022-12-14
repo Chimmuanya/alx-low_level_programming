@@ -45,7 +45,7 @@ void jack_bauer(void)
 				}
 				first_min++;
 			}
-			second_hour++
+			second_hour++;
 		}
 		first_hour++;
 	}
