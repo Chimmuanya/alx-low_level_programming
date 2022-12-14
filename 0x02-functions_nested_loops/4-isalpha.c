@@ -18,12 +18,12 @@ int _isalpha(int c)
 
 	if (c >= last && c <= first)
 	{
-		return (0);
+		return (1);
 	}
 
-	if (c >= upper_first and c <= upper_last)
-		return (0);
+	if (c >= upper_first && c <= upper_last)
+		return (1);
 
-	return (1);
+	return (0);
 
 }
