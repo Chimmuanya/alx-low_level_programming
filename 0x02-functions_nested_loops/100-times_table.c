@@ -27,15 +27,10 @@ void print_int(int n)
  */
 void print_times_table(int n)
 {
-
 	int i = 0;
 
 	if (n < 0 || n > 15)
-	{
 		return;
-	}
-
-
 
 	while (i <= n)
 	{
@@ -48,18 +43,20 @@ void print_times_table(int n)
 			if (j < n)
 			{
 				_putchar(COMMA);
-				if ((i * j < 10) || (i * (j + 1) < 10))
+
+				if ((i * j < 10) && (i * (j + 1) >= 10))
+					_putchar(SPACE);
+				else if ((i * j < 100) && (i * (j + 1) >= 100))
+				{}
+				else if (i * j < 10)
 				{
 					_putchar(SPACE);
 					_putchar(SPACE);
 				}
-				else if ((i * j >= 10) || (i * (j + 1) >= 10))
-				{
+				else if (i * j >= 10)
 					_putchar(SPACE);
-				}
-				else if ((i * j >= 100) || (i * (j + 1) >= 100))
-				{
-				}
+				else if (i * j >= 100)
+				{}
 				_putchar(SPACE);
 			}
 			j++;
