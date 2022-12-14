@@ -40,6 +40,10 @@ void times_table(void)
 			if (j < TIMES)
 			{
 				_putchar(COMMA);
+				if ((i * j < 10) && (i * (j + 1) < 10))
+				{
+					_putchar(SPACE);
+				}
 				_putchar(SPACE);
 			}
 			j++;
