@@ -14,3 +14,5 @@ These projects will make use of header file main.h andc function _putchar.
 10. 10-add.c: function to add 2 numbers and print their sum to stdout.
 11. 11-print_to_98.c: print from n to 98 on stdout
 12. 100-times_table.c: print n times table.
+13. 101-natural.c: print the sum of all the multiples of 3 or 5 that are less
+than 1024
