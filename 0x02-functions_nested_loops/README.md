@@ -8,3 +8,4 @@ These projects will make use of header file main.h andc function _putchar.
 4. int _isalpha(int c): checks if int char is an alphabet
 5-
 6. 6-abs.c: calculates the absolute value of an integer
+7. 7-print_last_digit.c: prints the last digit of an integer
