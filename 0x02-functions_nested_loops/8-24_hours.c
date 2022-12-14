@@ -20,6 +20,8 @@ void jack_bauer(void)
 
 		while (second_hour < 10)
 		{
+			if (first_hour == 2 && second_hour == 4)
+				break;
 			int first_min = 0;
 
 			while (first_min <= FIRST_MIN_DIGIT_LIMIT)
@@ -45,9 +47,6 @@ void jack_bauer(void)
 			}
 		}
 		second_hour++;
-		/*set maximum hours in a day*/
-		if (first_hour == 2 && second_hour == 4)
-			break;
-		first_hour++;
 	}
+	first_hour++
 }
