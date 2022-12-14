@@ -58,7 +58,7 @@ void print_times_table(int n)
 				}
 				else if (((i * j >= 10) && (i * (j + 1) >= 100))
 					 || i * j >= 100)
-				{}
+					_putchar(SPACE);
 			}
 			j++;
 		}
