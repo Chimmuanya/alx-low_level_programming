@@ -18,7 +18,7 @@ void print_int(int n)
 	{
 		print_int(n / 10);
 	}
-	putchar((n % 10) + '0');
+	_putchar((n % 10) + '0');
 }
 /**
  * times_table - function to print nine times using _putchar
