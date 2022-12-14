@@ -22,6 +22,7 @@ void jack_bauer(void)
 		{
 			if (first_hour == 2 && second_hour == 4)
 				break;
+
 			int first_min = 0;
 
 			while (first_min <= FIRST_MIN_DIGIT_LIMIT)
@@ -48,5 +49,5 @@ void jack_bauer(void)
 		}
 		second_hour++;
 	}
-	first_hour++
+	first_hour++;
 }
