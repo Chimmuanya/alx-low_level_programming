@@ -10,3 +10,4 @@ These projects will make use of header file main.h andc function _putchar.
 6. 6-abs.c: calculates the absolute value of an integer
 7. 7-print_last_digit.c: prints the last digit of an integer
 8. 8-24_hours.c: prints all the minutes in the 24 hours of the day
+9. 9-times_table.c: prints 9 times table
