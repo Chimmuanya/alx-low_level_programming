@@ -49,7 +49,7 @@ void print_times_table(int n)
 			{
 				_putchar(COMMA);
 				if ((i * j) < 10) && (i * (j + 1) < 10) ||
-							 i * (j + 1) < 100))
+							  (i * (j + 1) < 100))
 				{
 					_putchar(SPACE);
 				}
