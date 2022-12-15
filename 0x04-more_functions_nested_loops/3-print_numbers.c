@@ -1,6 +1,4 @@
 #include "main.h"
-#define COMMA 44
-#define SPACE 32
 
 /* betty style doc for function main goes there */
 /**
