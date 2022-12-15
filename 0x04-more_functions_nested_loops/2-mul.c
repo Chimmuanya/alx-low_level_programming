@@ -2,7 +2,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * _isdigit - entry function
+ * mul - entry function
  * multiplies two integers.
  * @a: integer to be multiplied.
  * @b: other integer for multiplication
