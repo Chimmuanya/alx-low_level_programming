@@ -9,7 +9,7 @@
 void print_numbers(void);
 {
 	int i = 48;
-	int nine = zero + 9;
+	int nine = i + 9;
 
 	while (i <= nine)
 	{
