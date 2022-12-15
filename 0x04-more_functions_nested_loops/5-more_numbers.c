@@ -43,7 +43,7 @@ void more_numbers(void)
 			print_int(j);
 			j++;
 		}
-		_putchar('\n')
+		_putchar('\n');
 		i++;
 	}
 	_putchar('\n');
