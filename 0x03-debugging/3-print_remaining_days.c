@@ -26,7 +26,7 @@ void print_remaining_days(int month, int day, int year)
 		leap = 1;
 	}
 
-	if (leap)
+	if (leap == 1)
 	{
 		if (month == 2 && day <= 60)
 		{
