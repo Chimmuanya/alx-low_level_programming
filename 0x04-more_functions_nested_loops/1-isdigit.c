@@ -2,8 +2,8 @@
 
 /* betty style doc for function main goes there */
 /**
- * _isupper - entry function
- * check if char int is lowercase or not.
+ * _isdigit - entry function
+ * check if char int is a digit or not.
  * @c: char to be checked.
  * Return: int 1 if success or 0 otherwise
  */
