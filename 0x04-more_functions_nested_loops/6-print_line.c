@@ -20,6 +20,8 @@ void print_line(int n)
 		_putchar(UNDERSCORE);
 
 		i++;
+		if (i > n)
+			_putchar('\n');
 	}
 	_putchar('\n');
 }
