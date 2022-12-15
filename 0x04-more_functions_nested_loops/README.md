@@ -4,3 +4,4 @@ More Exercises on nested loops
 3. 2-mul.c: multiplies 2 integers.
 4. 3-print_numbers.c: print 0 to 9, then newline.
 5. 4-print_most_numbers.c: print 0-9 apart from 2 and 4
+6. 5-more_numbers.c: print from 0-14 without spaces for 10 rows
