@@ -23,5 +23,5 @@ void print_line(int n)
 		if (i > n)
 			_putchar('\n');
 	}
-	_putchar('\n');
+
 }
