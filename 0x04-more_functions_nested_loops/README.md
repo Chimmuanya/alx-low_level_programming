@@ -3,3 +3,4 @@ More Exercises on nested loops
 2. 1-isdigit.c: returns 1 if character is a digit.
 3. 2-mul.c: multiplies 2 integers.
 4. 3-print_numbers.c: print 0 to 9, then newline.
+5. 4-print_most_numbers.c: print 0-9 apart from 2 and 4
