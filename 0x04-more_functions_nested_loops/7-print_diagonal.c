@@ -23,11 +23,13 @@ void print_diagonal(int n)
 
 	while (line_count <= n)
 	{
-		space_count = line_count -1;
-		while (space_count >= 0) {
+		space_count = line_count - 1;
+		while (space_count >= 0)
+		{
 			_putchar(SPACE);
 
-			if (space_count == 0) {
+			if (space_count == 0)
+			{
 				_putchar(F_SLASH);
 				_putchar('\n');
 			}
