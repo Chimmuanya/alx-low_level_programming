@@ -14,7 +14,7 @@ int main(void)
 	while (i <= 100)
 	{
 		if (i == 100)
-			printf("%d\n", 100);
+			printf("%s\n", "FIZZBUZZ");
 		else if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("%s ", "FIZZBUZZ");
