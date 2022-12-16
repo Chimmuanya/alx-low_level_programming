@@ -14,18 +14,18 @@ int main(void)
 	while (i <= 100)
 	{
 		if (i == 100)
-			printf("%s\n", "BUZZ");
+			printf("%s\n", "Buzz");
 		else if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("%s ", "FIZZBUZZ");
+			printf("%s ", "FizzBuzz");
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%s ", "FIZZ");
+			printf("%s ", "Fizz");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s ", "BUZZ");
+			printf("%s ", "Buzz");
 		}
 		else
 		{
