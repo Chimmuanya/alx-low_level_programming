@@ -7,3 +7,4 @@ More Exercises on nested loops
 6. 5-more_numbers.c: print from 0-14 without spaces for 10 rows
 7. 6-print_line.c: print a line of n '_'s to stdout
 8. 7-print_diagonal.c: print slashes diagonally
+9. 8-print_square.c: print # squares.
