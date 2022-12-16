@@ -8,3 +8,4 @@ More Exercises on nested loops
 7. 6-print_line.c: print a line of n '_'s to stdout
 8. 7-print_diagonal.c: print slashes diagonally
 9. 8-print_square.c: print # squares.
+10. 9-fizz_buzz.c: the fizzbuzz question.
