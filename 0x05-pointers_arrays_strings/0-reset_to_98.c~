@@ -1,0 +1,13 @@
+#include "main.h"
+
+/* betty style doc for function main goes there */
+/**
+ * reset_to 98- entry function
+ * changes variables values from pointers.
+ * @*n: pointer varible for resetting calue.
+ * Return: int 1 if success or 0 otherwise
+ */
+void reset_to_98(int *n)
+{
+	*n = 98;
+}
