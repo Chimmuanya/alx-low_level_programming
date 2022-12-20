@@ -3,7 +3,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * puts_half - entry function
+ * print_array - entry function
  * prints n elements of an array of integers, followed by a new line.
  * can use printf.
  * @n:  is the number of elements of the array to be printed.
@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 {
 	int index = 0;
 
-	
+
 	while (index < n)
 	{
 		printf("%d", a[index]);
