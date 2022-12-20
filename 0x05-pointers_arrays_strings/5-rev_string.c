@@ -3,7 +3,7 @@
 /* betty style doc for function main goes there */
 /**
  * print_rev - entry function
- * reverse a string
+ * rev_string - reverse a string
  * @s: string to be reversed.
  * Return: void
  */
