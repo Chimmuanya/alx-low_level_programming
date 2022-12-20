@@ -9,24 +9,35 @@
  */
 void print_rev(char *s)
 {
+	int l, i;
+	char *start;
+	char *end;
+	char ch;
 
-	int length = 0;
-	int index;
-
-	while (length >= 0)
+	while (*s != '\0')
 	{
-		if (s[length] == '\n')
-			break;
-		length++;
+		l++;
+		s++;
+	}
+
+	start = s;
+
+	end = s + l - 1;
+
+
+	for (i = 0; i < (l - 1) / 2; i++)
+	{
+		ch = *end;
+		*end = *start;
+		*start = ch;
+
+		start++;
+		end++;
 	}
 
 
-
-	for (index = length - 1; index >= 0; index--)
+	while (*s != '\0')
 	{
-		_putchar(s[index]);
+		_putchar(*s);
 	}
-
-
-	_putchar('\n');
 }
