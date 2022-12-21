@@ -5,19 +5,24 @@
  * _strcat- entry function
  * concatenates two strings.
  * @src: string to be appended.
- * @b: string to be appended to.
+ * @dest: string to be appended to.
  * Return: string.
  */
 char *_strcat(char *dest, char *src)
 {
-	/*initialize pointer to *dest and index for *src*/
+	/*initialize pointer to *dest*/
 
 	char *dptr = dest;
-	int i = 0;
+	int len_d = 0;
+	int len_s = 0;
 
 	/* move destination pointer to end of string before null*/
 	while (*dest != '\0')
+	{
 		dptr++;
+		dest++;
+		len_d++;
+	}
 
 	/* attach src to end of dest */
 	while (*src != '\0')
@@ -25,8 +30,9 @@ char *_strcat(char *dest, char *src)
 		*dptr = *src;
 		src++;
 		dptr++;
+		len_s++;
 	}
 
 	/* return pointer to dest */
-	return dest;
+	return (dptr - (len_d + len_s));
 }
