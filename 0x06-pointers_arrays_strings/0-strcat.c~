@@ -1,0 +1,18 @@
+#include "main.h"
+
+/* betty style doc for function main goes there */
+/**
+ * _strcat- entry function
+ * concatenates two strings.
+ * @src: string to be appended.
+ * @b: string to be appended to.
+ * Return: string.
+ */
+char *_strcat(char *dest, char *src)
+{
+	int temp;
+
+	temp = *b;
+	*b = *a;
+	*a = temp;
+}
