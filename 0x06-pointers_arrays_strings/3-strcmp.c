@@ -12,26 +12,11 @@ int _strcmp(char *s1, char *s2)
 {
 	char *fptr = s1;
 	char *sptr = s2;
-	int diff2 = *(fptr) - *(sptr);
-	int diff = 0;
 
-	for (; *fptr != '\0' && *sptr != '\0'; fptr++, sptr++)
+	if (*fptr != *sptr)
 	{
-		diff += (*fptr - *sptr);
+		return ((int) (*fptr - *sptr));
 	}
 
-	for (; *fptr != '\0'; fptr++)
-	{
-		diff += *fptr;
-	}
-
-	for (; *sptr != '\0'; sptr++)
-	{
-		diff -= *sptr;
-	}
-
-	if (diff != 0)
-		return (diff2);
-
-	return (diff);
+	return (0);
 }
