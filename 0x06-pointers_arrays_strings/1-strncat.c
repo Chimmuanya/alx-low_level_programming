@@ -2,7 +2,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * _strcat- entry function
+ * _strncat- entry function
  * concatenates two strings up to n chars of src str.
  * @src: string to be appended.
  * @dest: string to be appended to.
