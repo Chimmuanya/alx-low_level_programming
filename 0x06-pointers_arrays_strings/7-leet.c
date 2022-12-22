@@ -10,7 +10,7 @@ char *leet(char *s)
 {
 	char base[] = "aAeEoOtTlL";
 	char code[] = "4433007711";
-	int i,j;
+	int i, j;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
