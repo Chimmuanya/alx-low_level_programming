@@ -7,7 +7,7 @@
  * @str: string to be processed.
  * Return: uppercase str .
  */
-char *string_toupper(char * str)
+char *string_toupper(char *str)
 {
 	char a = 97;
 	char *a_ptr = str;
