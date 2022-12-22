@@ -8,18 +8,18 @@
  */
 char *leet(char *s)
 {
-	char *base = "aAeEoOtTlL";
-	char *code = "4433007711";
-	int j;
+	char base[] = "aAeEoOtTlL";
+	char code[] = "4433007711";
+	int i,j;
 
-	for (; *s != '\0'; s++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
 
-		for (j = 0; j < 10; j++)
+		for (j = 0; base[j]; j++)
 		{
-			if (*(base + j) == *s)
+			if (base[j] == *(s + i))
 			{
-				*s = *(code + j);
+				*(s + i) = code[j];
 			}
 		}
 
