@@ -21,8 +21,9 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (; n != 0 && *dptr != '\0'; n--)
 	{
-		*dptr = '\0';
+
 		dptr++;
+		*dptr = '\0';
 	}
 
 	return (dptr);
