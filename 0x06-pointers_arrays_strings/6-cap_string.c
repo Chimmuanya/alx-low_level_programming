@@ -12,7 +12,7 @@ char *cap_string(char *str)
 {
 	char a = 97;
 	char *a_ptr = str;
-	char *seps = ",;.!?\"(){} \t\n\0";
+	char *seps = ",;.!?\"(){} \n\t";
 	int j = 1;
 	int n;
 
@@ -27,6 +27,8 @@ char *cap_string(char *str)
 			{
 				*(a_ptr + j) -= 32;
 			}
+			if (*a_ptr == '\t')
+				*a_ptr = ' ';
 		}
 		a_ptr++;
 	}
