@@ -10,7 +10,6 @@
  */
 char *cap_string(char *str)
 {
-	char a = 97;
 	char *a_ptr = str;
 	char *seps = ",;.!?\"(){} \n\t";
 	int j = 1;
@@ -22,13 +21,12 @@ char *cap_string(char *str)
 
 		for (n = 0 ; *(seps + n) != '\0'; n++)
 		{
-			if (*a_ptr == *(seps + n) && (*(a_ptr + j) >= a &&
-						      *(a_ptr + j) <= (a + 25)))
+			if (*a_ptr == *(seps + n) && (*(a_ptr + j) >= 'a' &&
+						      *(a_ptr + j) <= 'z'))
 			{
 				*(a_ptr + j) -= 32;
 			}
-			if (*a_ptr == '\t')
-				*a_ptr = ' ';
+
 		}
 		a_ptr++;
 	}
