@@ -5,30 +5,36 @@
  * cap_string- entry function
  * Capitalize after word seperators like:
  * space, tabulation, newline, ,, ;, ., !, ?, ", (, ), {, and }
- * @str: string to be processed.
+ * @s: string to be processed.
  * Return: capitalized str .
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	char *a_ptr = str;
 	char *seps = ",;.!?\"(){} \n\t";
-	int j = 1;
-	int n;
+	int j, n;
 
 
-	while (*(a_ptr + j) != '\0')
+	for (j = 0; *(s + j) != '\0'; j++)
 	{
 
-		for (n = 0 ; *(seps + n) != '\0'; n++)
+		if (*(s + j) >= 'a' && *(s + j) <= 'z')
 		{
-			if (*a_ptr == *(seps + n) && (*(a_ptr + j) >= 'a' &&
-						      *(a_ptr + j) <= 'z'))
+			for (n = 0 ; *(seps + n) != '\0'; n++)
 			{
-				*(a_ptr + j) -= 32;
+				if (*(s + j - 1) == *(seps + n))
+				{
+					*(s + j) -= 32;
+					break;
+				}
+				else if (j == 0)
+				{
+					*(s + j) -= 32;
+					break;
+				}
 			}
 
 		}
-		a_ptr++;
+
 	}
-	return (str);
+	return (s);
 }
