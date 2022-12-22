@@ -13,9 +13,12 @@ int _strcmp(char *s1, char *s2)
 	char *fptr = s1;
 	char *sptr = s2;
 
-	if (*fptr != *sptr)
+	for (; *fptr != '\0' && *sptr != '\0'; fptr++, sptr++)
 	{
-		return ((int) (*fptr - *sptr));
+		if (*fptr != *sptr)
+		{
+			return ((int) (*fptr - *sptr));
+		}
 	}
 
 	return (0);
