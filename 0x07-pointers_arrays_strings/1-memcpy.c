@@ -19,11 +19,11 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		sptr = src;
 		dptr = dest;
 
-		*(dptr + i) = *(sptr+i);
+		*(dptr + i) = *(sptr + i);
 		sptr++;
 		dptr++;
 
 	}
-	return dest;
+	return (dest);
 
 }
