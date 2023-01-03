@@ -16,3 +16,6 @@ Prototype: unsigned int _strspn(char *s, char *accept);
 Returns the number of bytes in the initial segment of s which consist only of bytes from accept
 
 4. Write a function that searches a string for any of a set of bytes.
+
+5. The _strstr() function finds the first occurrence of the substring needle in the string haystack. The terminating null bytes (\0) are not compared
+Returns a pointer to the beginning of the located substring, or NULL if the substring is not found.
