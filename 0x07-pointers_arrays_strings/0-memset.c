@@ -9,13 +9,15 @@
  * @n: number of bytes.
  * Return: Returns a pointer to the memory area s.
  */
-char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
-	for(i=0;i<=n+2;i++)
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
 	{
 		char *ptr = s + i;
-		*ptr=b;
+
+		*ptr = b;
 	}
-	return s;
+	return (s);
 }
