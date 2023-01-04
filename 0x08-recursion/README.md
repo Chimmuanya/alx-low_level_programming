@@ -11,3 +11,8 @@ Prototype: void _print_rev_recursion(char *s);
 3.  a function that returns the length of a string.
 
 Prototype: int _strlen_recursion(char *s);
+
+4. Write a function that returns the factorial of a given number.
+
+if n is lower than 0, the function should return -1 to indicate an error
+Factorial of 0 is 1
