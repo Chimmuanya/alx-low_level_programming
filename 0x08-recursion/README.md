@@ -26,3 +26,8 @@ if y is lower than 0, the function should return -1
 
 
 If n does not have a natural square root, the function should return -1
+
+
+7. Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
+
+Prototype: int is_prime_number(int n);
