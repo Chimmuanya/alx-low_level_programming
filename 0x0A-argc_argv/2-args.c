@@ -12,14 +12,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1;
+	int i;
 	/* char cwd[256]; */
 	/* char mod_fn; */
 
-	while (i < argc)
-	{
+        for (i = 0; i < argc; i++)
 		printf("%s\n", argv[i]);
-		i++;
-	}
+
 	return (0);
 }
