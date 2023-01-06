@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	/* char cwd[256]; */
 	/* char mod_fn; */
 
-        for (i = 0; i < argc; i++)
+	for (i = 0; i < argc; i++)
 		printf("%s\n", argv[i]);
 
 	return (0);
