@@ -13,12 +13,12 @@
 int main(int argc, char *argv[])
 {
 	int i = argc;
-	char cwd[256];
+	/* char cwd[256]; */
 	/* char mod_fn; */
 
+	/* if (i) */
+	/* getcwd(cwd, sizeof(cwd)); */
 	if (i)
-		getcwd(cwd, sizeof(cwd));
-
-	printf("%s%s\n", cwd, (argv[0] + 1));
+		printf("%s\n", argv[0]);
 	return (0);
 }
