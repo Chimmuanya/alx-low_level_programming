@@ -29,7 +29,7 @@ int get_str_len(char* my_str)
 
 int pali_helper (char* my_str, int l, int r)
 {
-	if (NULL == my_str)
+	if ('\0' == my_str)
 		return (1);
 	else
 	{
@@ -39,7 +39,7 @@ int pali_helper (char* my_str, int l, int r)
 		if (l >= r)
 			return 1;
 
-		if (*(my_str + l) == *(my_str + l))
+		if (*(my_str + l) == *(my_str + r))
 			return pali_helper(my_str, l + 1, r - 1);
 	}
 
