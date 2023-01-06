@@ -8,12 +8,12 @@
 
 
 
-int get_str_len(char* my_str)
+int get_str_len(char *my_str)
 {
 	if (*my_str == '\0')
-	    return (0);
+		return (0);
 
-	return (1 + get_str_len(my_str+ 1));
+	return (1 + get_str_len(my_str + 1));
 }
 
 
@@ -27,21 +27,17 @@ int get_str_len(char* my_str)
 
 
 
-int pali_helper (char* my_str, int l, int r)
+int pali_helper(char *my_str, int l, int r)
 {
-	if ('\0' == *my_str)
+	if (l < 0 || r < 0)
+		return (0);
+
+	if (l >= r)
 		return (1);
-	else
-	{
-		if (l < 0 || r < 0)
-			return (0);
 
-		if (l >= r)
-			return 1;
+	if (*(my_str + l) == *(my_str + r - 1))
+		return (pali_helper(my_str, l + 1, r - 1));
 
-		if (*(my_str + l) == *(my_str + r))
-			return pali_helper(my_str, l + 1, r - 1);
-	}
 	return (0);
 }
 
