@@ -8,3 +8,5 @@ Projects on testing for arguments to main
 by a newline
 
 4. 3-mul.c: a program that multiplies two numbers.
+
+5. 4-add.c: a program that adds positive numbers.
