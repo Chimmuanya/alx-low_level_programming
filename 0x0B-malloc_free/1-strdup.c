@@ -12,7 +12,12 @@ char *_strdup(char *str)
 	char *cpy;
 	unsigned int i = 0;
 	unsigned int l = 0;
-	char *p = str;
+	char *p;
+
+	if (str == NULL)
+		return (NULL);
+
+	p = str;
 
 	/* get str length */
 	while (*p != '\0')
@@ -21,8 +26,6 @@ char *_strdup(char *str)
 		p++;
 	}
 
-	if (str == NULL)
-		return (NULL);
 
 	cpy = malloc(sizeof(char) * l);
 
