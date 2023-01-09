@@ -30,7 +30,6 @@ void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m)
 			break;
 		}
 	}
-
 	while (index <= m + l)
 	{
 		if (s2 != NULL)
@@ -45,8 +44,6 @@ void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m)
 			break;
 		}
 	}
-
-	/* add terminating null char */
 	*(res + index) = '\0';
 }
 
@@ -76,6 +73,8 @@ char *str_concat(char *s1, char *s2)
 	char *p2;
 
 	/* manage NULL situations of s1 and s2 */
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 	if (s1 == NULL)
 		p1 = empty;
 	else
@@ -89,7 +88,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		p2 = s2;
 	}
-
 	/* find len of s1 and s2 */
 	while (*p1 != '\0')
 	{
@@ -106,6 +104,5 @@ char *str_concat(char *s1, char *s2)
 	res = malloc(sizeof(char) * l + sizeof(char) * m + 1);
 	/* create concatenated str */
 	concat(s1, s2, res, l, m);
-
 	return (res);
 }
