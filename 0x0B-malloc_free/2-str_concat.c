@@ -73,8 +73,7 @@ char *str_concat(char *s1, char *s2)
 	char *p2;
 
 	/* manage NULL situations of s1 and s2 */
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+
 	if (s1 == NULL)
 		p1 = empty;
 	else
