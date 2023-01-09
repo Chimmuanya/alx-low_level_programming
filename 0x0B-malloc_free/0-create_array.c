@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * create_array -function that
@@ -9,10 +10,12 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *str = malloc((sizeof(char)) * size);
-	char *ptr = str;
-	int counter = 0;
+	char *str;
+	char *ptr;
+	unsigned int counter = 0;
 
+	str = malloc((sizeof(char)) * size);
+	ptr = str;
 	if (size == 0)
 		return ('\0');
 
