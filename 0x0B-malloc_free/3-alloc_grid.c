@@ -20,6 +20,12 @@ int **alloc_grid(int width, int height)
 	/* first allocate memory to pointer of arrays */
 	my_ptr = malloc(height * sizeof(int *));
 
+	/* free memory of my_ptr if malloc fails */
+	if (my_ptr == NULL)
+	{
+		free(my_ptr);
+		return (NULL);
+	}
 	/* then allocate memory for each array of ints */
 	for (i = 0; i < height; i++)
 	{
