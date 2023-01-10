@@ -73,14 +73,12 @@ char *str_concat(char *s1, char *s2)
 	char *p2;
 
 	/* manage NULL situations of s1 and s2 */
-
 	if (s1 == NULL)
 		p1 = empty;
 	else
 	{
 		p1 = s1;
 	}
-
 	if (s2 == NULL)
 		p2 = empty;
 	else
@@ -101,6 +99,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	/* create memory for new char array */
 	res = malloc(sizeof(char) * l + sizeof(char) * m + 1);
+	if (res == NULL)
+		return (NULL);
 	/* create concatenated str */
 	concat(s1, s2, res, l, m);
 	return (res);
