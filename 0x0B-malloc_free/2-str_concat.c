@@ -103,5 +103,7 @@ char *str_concat(char *s1, char *s2)
 	res = malloc(sizeof(char) * l + sizeof(char) * m + 1);
 	/* create concatenated str */
 	concat(s1, s2, res, l, m);
+	if (res == NULL)
+		return (NULL);
 	return (res);
 }
