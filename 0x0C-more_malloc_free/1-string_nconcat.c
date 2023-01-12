@@ -11,13 +11,12 @@
  * @l: s2 length
  * Return: void;
  */
-void concat(char *s1, char *s2, char *res,
-unsigned int l, unsigned int m, unsigned int n)
+void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
+	    unsigned int n)
 {
 	unsigned int index = 0;
 	unsigned int j = 0;
 	char empty[] = {""};
-
 	/**
 	 * If n is greater or equal to the length of s2
 	 * then use the entire string s2
@@ -60,7 +59,7 @@ unsigned int l, unsigned int m, unsigned int n)
 
 
 /**
- * str_nconcat -a function that concatenates two strings (s1 +
+ * string_nconcat -a function that concatenates two strings (s1 +
  * 1st n bytes of s2).
  * @s1: string to be concatenated unto.
  * @s2: string to be concatenated into.
