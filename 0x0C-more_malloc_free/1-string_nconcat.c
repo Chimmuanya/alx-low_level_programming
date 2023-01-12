@@ -11,7 +11,7 @@
  * @l: s2 length
  * Return: char pointer;
  */
-char *concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
+void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
 	    unsigned int n)
 {
 	unsigned int index = 0;
