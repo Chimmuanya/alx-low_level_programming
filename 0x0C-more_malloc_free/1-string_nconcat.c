@@ -9,9 +9,9 @@
  * @m: s1 length
  * @n: 1st n bytes of s2
  * @l: s2 length
- * Return: void;
+ * Return: char pointer;
  */
-void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
+char *concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
 	    unsigned int n)
 {
 	unsigned int index = 0;
@@ -103,7 +103,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p2++;
 	}
 	/* create memory for new char array */
-	res = malloc(sizeof(char) * l + sizeof(char) * m + 1);
+	res = (char *) malloc(sizeof(char) * l + sizeof(char) * m + 1);
 	if (res == NULL)
 		return (NULL);
 	/* create concatenated str */
