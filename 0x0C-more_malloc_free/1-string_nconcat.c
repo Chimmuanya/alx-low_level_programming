@@ -23,7 +23,7 @@ void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
 	 */
 
 	if (m > n)
-		m = n;
+		m = n - 1;
 
 
 	while (index < l)
