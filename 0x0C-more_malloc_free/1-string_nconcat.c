@@ -23,7 +23,7 @@ void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
 	 */
 
 	if (m > n)
-		m = n;
+		m = n - 1;
 
 
 	while (index < l)
@@ -103,7 +103,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p2++;
 	}
 	/* create memory for new char array */
-	res = (char *) malloc(sizeof(char) * l + sizeof(char) * m + 1);
+	res = (char *) malloc(sizeof(char) (l + m + 1);
 	if (res == NULL)
 		return (NULL);
 	/* create concatenated str */
