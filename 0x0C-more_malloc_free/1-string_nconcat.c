@@ -1,61 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
 
-/**
- * concat -a function that concatenates two strings.,
- * @s1: string to be concatenated unto.
- * @s2: string to be concatenated into.
- * @res: buffer
- * @m: s1 length
- * @n: 1st n bytes of s2
- * @l: s2 length
- * Return: char pointer;
- */
-void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
-	    unsigned int n)
-{
-	unsigned int index = 0;
-	unsigned int j = 0;
-	char empty[] = {""};
-	/**
-	 * If n is greater or equal to the length of s2
-	 * then use the entire string s2
-	 */
-
-	if (m > n)
-		m = n - 1;
-
-
-	while (index < l)
-	{
-		if (s1 != NULL)
-		{
-			*(res + index) = *(s1 + index);
-			index++;
-		}
-		else
-		{
-			*res = *empty;
-			break;
-		}
-	}
-	while (index <= m + l)
-	{
-		if (s2 != NULL)
-		{
-			*(res + index) = *(s2 + j);
-			index++;
-			j++;
-		}
-		else
-		{
-			*(res + index) = *empty;
-			break;
-		}
-	}
-	*(res + index) = '\0';
-}
-
 
 
 /**
@@ -70,43 +15,36 @@ void concat(char *s1, char *s2, char *res, unsigned int l, unsigned int m,
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int l = 0;
-	unsigned int m = 0;
+	unsigned int l, m;
 	char *res;
-	char empty[] = {""};
-	char *p1;
-	char *p2;
+	unsigned int i;
 
 	/* manage NULL situations of s1 and s2 */
-	if (s1 == NULL)
-		p1 = empty;
-	else
-	{
-		p1 = s1;
-	}
-	if (s2 == NULL)
-		p2 = empty;
-	else
-	{
-		p2 = s2;
-	}
-	/* find len of s1 and s2 */
-	while (*p1 != '\0')
-	{
-		l++;
-		p1++;
-	}
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
 
-	while (*p2 != '\0')
-	{
-		m++;
-		p2++;
-	}
+	/* find len of s1 and s2 */
+	for (l = 0; *(s1 + l); l++)
+		;
+	for (m = 0; *(s2 + m); m++)
+		;
+	/* conditional for n bytes */
+	if (m > n)
+		m = n;
 	/* create memory for new char array */
-	res = (char *) malloc(sizeof(char) * (l + m + 1));
+	res = malloc(sizeof(char) * (l + m + 1));
 	if (res == NULL)
 		return (NULL);
-	/* create concatenated str */
-	concat(s1, s2, res, l, m, n);
+	for (i = 0; i < (l + m); i++)
+	{
+		if (i < l)
+			*(res + i) = *(s1 + i);
+		else
+			*(res + i) = *(s2 + i - l);
+	}
+	/* end with null char */
+	*(res + i) = '\0';
 	return (res);
 }
