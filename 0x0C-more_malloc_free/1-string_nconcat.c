@@ -103,7 +103,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p2++;
 	}
 	/* create memory for new char array */
-	res = (char *) malloc(sizeof(char) * (l + m + 1);
+	res = (char *) malloc(sizeof(char) * (l + m + 1));
 	if (res == NULL)
 		return (NULL);
 	/* create concatenated str */
