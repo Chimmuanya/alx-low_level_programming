@@ -116,11 +116,7 @@ int main(int argc, char *argv[])
 	char *err = "Error";
 
 	if (*argv[1] == '0' || *argv[2] == '0')
-	{
 		p_str("0");
-		return (0);
-	}
-
 	if (argc != 3)
 	{
 		p_str(err);
@@ -128,7 +124,6 @@ int main(int argc, char *argv[])
 	}
 	n1 = _strcpy(n1, argv[1]);
 	n2 = _strcpy(n2, argv[2]);
-
 	for (l = 0; *(n1 + l); l++)
 	{
 		if (!(*(n1 + l) >= 48 && *(n1 + l) <= 57))
@@ -150,7 +145,6 @@ int main(int argc, char *argv[])
 	if (!rev || !res)
 		exit(98);
 	str_mul(n1, n2, rev, res, l, m);
-
 	p_str(res);
 	return (0);
 }
