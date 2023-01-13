@@ -10,11 +10,9 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	unsigned int i, j;
 
 	/*If new_size > old_size, the “added” memory should not be initialized*/
-	if (new_size > old_size)
-		;
+
 	/*If new_size == old_size do not do anything and return ptr*/
 	if (new_size == old_size)
 		return (ptr);
