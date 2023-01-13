@@ -6,3 +6,4 @@ More Projects on Malloc, Calloc and Realloc
 
 2.  a function that allocates memory for an array, using malloc.
 
+3. a function that creates an array of integers.
