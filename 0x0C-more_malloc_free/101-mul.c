@@ -115,6 +115,12 @@ int main(int argc, char *argv[])
 	int *rev;
 	char *err = "Error";
 
+	if (*argv[1] == '0' || *argv[2] == '0')
+	{
+		p_str("0");
+		return (0);
+	}
+
 	if (argc != 3)
 	{
 		p_str(err);
