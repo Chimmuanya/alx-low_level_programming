@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
  * init_dog -function to initialize type dog
- * @dog: dog struct
+ * @d: dog struct pointer
  * @name: dog name.
  * @age: dog age
  *@owner: dog owner
