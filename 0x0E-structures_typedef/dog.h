@@ -2,9 +2,8 @@
 #define _dog_h_
 
 /**
- * dog_t: a tpe of dog
+ * dog_t - a typedef type of dog
  */
-
 typedef struct dog dog_t;
 
 /**
