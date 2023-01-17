@@ -1,6 +1,11 @@
 #ifndef _dog_h_
 #define _dog_h_
 
+/**
+ * dog_t: a tpe of dog
+ */
+
+typedef struct dog dog_t;
 
 /**
  * struct dog - Dog information
