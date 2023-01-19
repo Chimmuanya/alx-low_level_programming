@@ -26,11 +26,7 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	c = atoi(argv[3]);
 	b = argv[2];
-	if (argv[2][1])
-	{
-		printf("Error\n");
-		exit(99);
-	}
+
 	if (c == 0 && (*b == '/' || *b == '%'))
 	{
 		printf("Error\n");
@@ -39,15 +35,15 @@ int main(int argc, char *argv[])
 
 	op_ptr = get_op_func(b);
 
-	if (op_ptr)
-	{
-		result = op_ptr(a, c);
-		printf("%d\n", result);
-	}
-	else
+	if (!op_ptr || argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
+	}
+	else
+	{
+		result = op_ptr(a, c);
+		printf("%d\n", result);
 	}
 
 	return (0);
