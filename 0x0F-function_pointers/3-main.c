@@ -48,6 +48,11 @@ int main(int argc, char *argv[])
 		result = op_ptr(a, c);
 		printf("%d\n", result);
 	}
+	else
+	{
+		printf("Error\n");
+                exit(99);
+	}
 
 	return (0);
 }
