@@ -28,6 +28,12 @@ int main(int argc, char *argv[])
 	c = atoi(argv[3]);
 	b = argv[2];
 
+	if (argv[2][1])
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
 	if (c == 0 && (*b == '/' || *b == '%'))
 	{
 		printf("Error\n");
@@ -42,10 +48,6 @@ int main(int argc, char *argv[])
 		result = op_ptr(a, c);
 		printf("%d\n", result);
 	}
-	else
-	{
-		printf("Error\n");
-		exit(99);
-	}
+
 	return (0);
 }
