@@ -23,17 +23,14 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-
 	a = atoi(argv[1]);
 	c = atoi(argv[3]);
 	b = argv[2];
-
 	if (argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
 	}
-
 	if (c == 0 && (*b == '/' || *b == '%'))
 	{
 		printf("Error\n");
@@ -41,7 +38,6 @@ int main(int argc, char *argv[])
 	}
 
 	op_ptr = get_op_func(b);
-
 
 	if (op_ptr)
 	{
@@ -51,7 +47,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error\n");
-                exit(99);
+		exit(99);
 	}
 
 	return (0);
