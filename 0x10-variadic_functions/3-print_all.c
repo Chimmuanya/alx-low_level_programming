@@ -37,7 +37,7 @@ int _strlen(const char *s)
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, j = 0, n_args = _strlen(format);
+	int i = 0, j = 0,  n_args = _strlen(format);
 	char *s, *f_char = "cifs";
 	unsigned char c;
 
@@ -58,7 +58,10 @@ void print_all(const char * const format, ...)
 				case 's':
 					s = va_arg(args, char*);
 					if (!s)
+					{
 						printf("(nil)");
+						break;
+					}
 					printf("%s", s);
 					break;
 				case 'f':
@@ -67,8 +70,8 @@ void print_all(const char * const format, ...)
 				default:
 					printf("%d", va_arg(args, int));
 				}
-				(i < n_args - 1) ? printf(", ") :
-					printf("%s", "");
+				if (i < n_args - 1)
+					printf(", ");
 			}
 			j++;
 		}
