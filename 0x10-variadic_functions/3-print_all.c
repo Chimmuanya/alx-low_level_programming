@@ -67,8 +67,8 @@ void print_all(const char * const format, ...)
 				default:
 					printf("%d", va_arg(args, int));
 				}
-				if (i < n_args - 1)
-					printf(", ");
+				(i < n_args - 1) ? printf(", ") :
+					printf("%s", "");
 			}
 			j++;
 		}
