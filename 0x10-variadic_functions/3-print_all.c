@@ -6,28 +6,6 @@
 
 
 
-
-
-/**
- * _strlen - entry function
- * calculate the length of a string using only pointers
- * @s: string to be counted.
- * Return: int (length of str)
- */
-int _strlen(const char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		len++;
-		s++;
-	}
-
-	return (len);
-}
-
-
 /**
  * print_all -a variadic function that prints everything
  * separated by a separator
