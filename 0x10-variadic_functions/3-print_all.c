@@ -34,12 +34,11 @@ int _strlen(const char *s)
  * @format: format of values to be printed.
  * Return: void
  */
-void print_all(const char *format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, j = 0, num, n_args = _strlen(format);
+	int i = 0, j = 0, n_args = _strlen(format);
 	char *s, *f_char = "cifs";
-	double f;
 	unsigned char c;
 
 	va_start(args, format);
@@ -63,12 +62,10 @@ void print_all(const char *format, ...)
 					printf("%s", s);
 					break;
 				case 'f':
-					f = va_arg(args, double);
-					printf("%f", f);
+					printf("%f", va_arg(args, double));
 					break;
 				default:
-					num = va_arg(args, int);
-					printf("%d", num);
+					printf("%d", va_arg(args, int));
 				}
 				if (i < n_args - 1)
 					printf(", ");
