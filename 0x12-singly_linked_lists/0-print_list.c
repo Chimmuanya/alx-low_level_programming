@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * _print_list-a function that prints all the elements of a list_t list
@@ -14,6 +12,7 @@ size_t print_list(const list_t *h)
 	int l = 0;
 	size_t count = 0;
 	const list_t *n = malloc(sizeof(list_t));
+
 	n = h;
 
 	while (n != NULL)
