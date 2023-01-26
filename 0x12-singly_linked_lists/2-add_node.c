@@ -14,7 +14,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (!new)
 		return (NULL);
 
-	for (j = 1; *(str + j); j++)
+	for (j = 0; *(str + j); j++)
 		;
 
 	new->str = strdup(str);
