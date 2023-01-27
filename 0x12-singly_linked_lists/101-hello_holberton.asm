@@ -1,6 +1,6 @@
 	SECTIOM .data
-msg:	db "Hello, Holberton", 0
-fmt:	db "%s", 10, 0
+msg:	db "Hello, Holberton\n", 0
+fmt:	db "%s", 15, 0
 
 	SECTION .text
 	extern printf
@@ -14,4 +14,3 @@ _start:
 
 	mov ebx, 0
 	mov eax, 1
-	int 0x08
