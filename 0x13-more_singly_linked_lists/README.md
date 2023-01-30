@@ -7,5 +7,5 @@
 | `2-add_nodeint.c` | A function that adds a new node at the beginning of a listint_t list. |
 | `3-add_nodeint_end.c` |  A function that adds a new node at the end of a listint_t list. |
 | `4-free_listint.c` | A function that frees a listint_t list. |
-| `100-first.c` | A function executed before main() |
+| `5-free_listint2.c` | A function that frees a listint_t list and sets head to NULL |
 | `101-hello_holberton.asm` | a 64-bit program in assembly that prints Hello, Holberton, followed by a new line. |
