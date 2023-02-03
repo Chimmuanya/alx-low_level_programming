@@ -11,19 +11,14 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int i = 0;
-	int len = 0;
-	unsigned int base_two = 1;
-
-	for (len = 0; *(b + len); len++)
-		;
-	for (len--; len >= 0; len--, base_two *= 2)
+	if (n >> 0)
 	{
-
-		if (b[len] != '0' && b[len] != '1')
-			return (0);
-		if (b[len] & 1)
-			i += base_two;
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 	}
-	return (i);
+	else
+	{
+		_putchar('0');
+	}
 }
