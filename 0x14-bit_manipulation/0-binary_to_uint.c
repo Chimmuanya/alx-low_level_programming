@@ -29,3 +29,4 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (i);
 }
+/* help (with permission) from Isaac Gospelin's code acknowledged*/
