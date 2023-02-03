@@ -2,12 +2,12 @@
 
 /* betty style doc for function main goes there */
 /**
- * binary_to_uint -entry function
- * converts a binary number to an unsigned int.
- * fills the first n bytes of the memory area pointed to by s with
- * @b: the constant char holding the bin num
+ * print_binary -entry function
+ * prints the binary form of an unsigned int without printf, modulus or '/'.
  *
- * Return: Returns the unsigned int
+ * @n: the unsigned int to be converted and printed
+ *
+ * Return: Returns void
  */
 void print_binary(unsigned long int n)
 {
