@@ -11,16 +11,21 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int i;
+	if (!n)
+		return (-1);
 
-	if (n == 0 && index < 64)
-		return (0);
+	if (index > 63)
+		return (-1);
 
-	for (i = 0; i <= 63; n >>= 1, i++)
-	{
-		if (index == i)
-			return (n & 1);
-	}
-	return (-1);
+	*n = (1 << index) | *n;
+	if (*n)
+		return (1);
+	else
+		return (-1);
 }
-/* help (with permission) from Isaac Gospelin's code acknowledged*/
+/**
+* I acknowledge help from https://codeforwin.org/ and
+* Gospelin on baseline knowledge.
+* Any credit or acknowledgment of others not previously given,
+* including in previous projects, is deeply regretted
+*/
