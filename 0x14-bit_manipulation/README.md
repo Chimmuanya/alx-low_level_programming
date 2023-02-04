@@ -8,5 +8,5 @@
 | `3-set_bit.c` | set an integer's bit at positionn index. |
 | `4-clear_bit.c` |  a function that sets the value of a bit to 0 at a given index. |
 | `5-flip_bits.c` | A function that returns the number of bits you would need to flip to get from one number to another. |
-| `6-pop_listint.c` | A function that deletes the head node of a listint_t linked list, and returns the head node’s data (n). |
+| `100-get_endianness.c` | A function that checks the endianness. |
 | `7-get_nodeint.c` | A function that returns the nth node of a listint_t linked list. |
