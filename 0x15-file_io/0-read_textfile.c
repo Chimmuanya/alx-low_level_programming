@@ -9,7 +9,7 @@
  *
  * Return: Returns actual number of chars read or 0 if error
  */
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t o, r, w;
 	char *bufn;
@@ -17,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters);
 	bufn = malloc(sizeof(char) * letters);
 	if (!bufn)
 		return (0);
-	o = open(filename, O_READONLY);
+	o = open(filename, O_RDONLY);
 	r = read(o, bufn, letters);
 	w = write(STDOUT_FILENO, bufn, r);
 
