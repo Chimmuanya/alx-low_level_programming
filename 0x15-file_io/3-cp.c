@@ -31,10 +31,10 @@ int main(int argc, char **argv)
 	to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (from == -1 || to == -1)
+		if (from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
-				"Error: Can't write to %s\n", file_to);
+				"Error: Can't read from %s\n", file_from);
 			free(buffer);
 			exit(98);
 		}
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 		if (w == -1 || to == -1)
 		{
 			dprintf(STDERR_FILENO,
-				 "Error: Can't write to %s", file_to);
+				 "Error: Can't write to %s\n", file_to);
 			free(buffer);
 			exit(99);
 		}
@@ -70,7 +70,7 @@ char *make_buffer(char *file_to)
 	if (!buffer)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't write to %s", file_to);
+			"Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
 	return (buffer);
@@ -94,7 +94,7 @@ void close_f(int f_d)
 	if (i == -1)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't close fd %i", f_d);
+			"Error: Can't close fd %i"\n, f_d);
 		exit(100);
 	}
 }
