@@ -94,7 +94,7 @@ void close_f(int f_d)
 	if (i == -1)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't close fd %i"\n, f_d);
+			"Error: Can't close fd %i\n", f_d);
 		exit(100);
 	}
 }
